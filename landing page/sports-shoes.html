@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>StrideX - Sports Shoes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <style>
+    a { text-decoration: none; transition: color 0.3s ease; }
+    a:hover { color: #facc15; text-decoration: none; }
+    .buy-now-button {
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .buy-now-button:hover {
+      box-shadow: 0 8px 15px rgba(250, 204, 21, 0.5);
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 text-white font-sans">
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-purple-700 via-indigo-800 to-indigo-900 shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-5">
+      <h1 class="text-4xl font-extrabold tracking-tight select-none cursor-default">StrideX</h1>
+      <nav class="space-x-6 text-lg font-semibold">
+        <a href="index.html" class="hover:text-yellow-400">Home</a>
+        <a href="sports-shoes.html" class="text-yellow-400 font-bold">Sports Shoes</a>
+        <a href="slippers.html" class="hover:text-yellow-400">Slippers</a>
+        <a href="sneakers.html" class="hover:text-yellow-400">Sneakers</a>
+        <a href="about.html" class="hover:text-yellow-400">About</a>
+        <a href="#contact" class="hover:text-yellow-400">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Product Section -->
+  <section class="max-w-4xl mx-auto py-20 px-6 text-center" data-aos="fade-up">
+    <h2 class="text-5xl font-extrabold mb-8 drop-shadow-lg">StrideX Sports Shoes</h2>
+    <img src="https://via.placeholder.com/600x400?text=Sports+Shoes" alt="StrideX Sports Shoes" class="mx-auto rounded-lg shadow-xl mb-8" />
+    <p class="text-xl mb-12 max-w-3xl mx-auto leading-relaxed">
+      High performance sports shoes designed with breathable fabric and superior grip to keep you comfortable and agile during any activity.
+    </p>
+    <div class="flex justify-center space-x-6">
+      <a href="https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YOUR_SANDBOX_BUTTON_ID" target="_blank" rel="noopener" class="buy-now-button bg-yellow-400 text-indigo-900 font-bold py-3 px-7 rounded hover:bg-yellow-500 transition">Buy Now - PayPal</a>
+      <a href="gcash.html" target="_blank" rel="noopener" class="buy-now-button bg-green-500 text-white font-bold py-3 px-7 rounded hover:bg-green-600">Buy Now - GCash</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-indigo-900 text-yellow-400 py-6 text-center font-semibold">
+    &copy; 2025 StrideX. All rights reserved.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+</body>
+</html>

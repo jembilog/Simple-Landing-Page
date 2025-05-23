@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>StrideX - Premium Footwear</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS for scroll animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    /* Remove underlines and add hover color transitions */
+    a {
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #facc15; /* yellow-400 */
+      text-decoration: none;
+    }
+
+    /* Buy now buttons styling */
+    .buy-now-button {
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .buy-now-button:hover {
+      box-shadow: 0 8px 15px rgba(250, 204, 21, 0.5);
+    }
+
+    /* Product card hover animations */
+    .product-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background-position 0.3s ease;
+      background-size: 200% 200%;
+      background-position: left center;
+    }
+    .product-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 25px rgba(128, 90, 213, 0.7);
+      background-position: right center;
+    }
+
+    /* Make product card links block so entire card is clickable */
+    .product-link {
+      display: block;
+      color: inherit;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 text-white font-sans">
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-purple-700 via-indigo-800 to-indigo-900 shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-5">
+      <h1 class="text-4xl font-extrabold tracking-tight select-none cursor-default">StrideX</h1>
+      <nav class="space-x-6 text-lg font-semibold">
+        <a href="#home" class="hover:text-yellow-400">Home</a>
+        <a href="#products" class="hover:text-yellow-400">Products</a>
+        <a href="#contact" class="hover:text-yellow-400">Contact</a>
+        <a href="about.html" class="hover:text-yellow-400">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-6" data-aos="fade-down">
+    <h2 class="text-5xl font-extrabold mb-6 drop-shadow-lg">Step Into Excellence with <span class="text-yellow-400">StrideX</span></h2>
+    <p class="text-xl max-w-3xl mb-10 leading-relaxed drop-shadow-md">
+      Premium footwear crafted for your active lifestyle — sports, sneakers, slippers, and more.
+    </p>
+    <a href="#products" class="inline-block bg-yellow-400 text-indigo-900 font-bold px-8 py-4 rounded-lg shadow-lg hover:bg-yellow-500 transition">Explore Products</a>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="max-w-6xl mx-auto py-20 px-6">
+    <h3 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">Our Collections</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+      <!-- Sports Shoes -->
+      <a href="sports-shoes.html" class="product-link" data-aos="fade-up" data-aos-delay="100" >
+        <div class="product-card bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl p-6 cursor-pointer">
+          <img src="shoe1.png" alt="StrideX Sports Shoes" class="rounded-md mb-4 shadow-lg" />
+          <h4 class="text-2xl font-semibold mb-2">Sports Shoes</h4>
+          <p class="mb-4">High performance sports shoes with breathable fabric and superior grip.</p>
+          <div class="flex space-x-4">
+            <a href="https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YOUR_SANDBOX_BUTTON_ID" target="_blank" rel="noopener" class="buy-now-button bg-yellow-400 text-indigo-900 font-bold py-2 px-5 rounded hover:bg-yellow-500" onclick="event.stopPropagation()">Buy Now - PayPal</a>
+            <a href="gcash.html" target="_blank" rel="noopener" class="buy-now-button bg-green-500 text-white font-bold py-2 px-5 rounded hover:bg-green-600" onclick="event.stopPropagation()">Buy Now - GCash</a>
+          </div>
+        </div>
+      </a>
+
+      <!-- Slippers -->
+      <a href="slippers.html" class="product-link" data-aos="fade-up" data-aos-delay="200" >
+        <div class="product-card bg-gradient-to-br from-pink-500 to-red-600 rounded-xl p-6 cursor-pointer">
+          <img src="slippers1.jpg" alt="StrideX Slippers" class="rounded-md mb-4 shadow-lg" />
+          <h4 class="text-2xl font-semibold mb-2">Slippers</h4>
+          <p class="mb-4">Comfortable and stylish slippers perfect for casual wear.</p>
+          <div class="flex space-x-4">
+            <a href="https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YOUR_SANDBOX_BUTTON_ID" target="_blank" rel="noopener" class="buy-now-button bg-yellow-400 text-indigo-900 font-bold py-2 px-5 rounded hover:bg-yellow-500" onclick="event.stopPropagation()">Buy Now - PayPal</a>
+            <a href="gcash.html" target="_blank" rel="noopener" class="buy-now-button bg-green-500 text-white font-bold py-2 px-5 rounded hover:bg-green-600" onclick="event.stopPropagation()">Buy Now - GCash</a>
+          </div>
+        </div>
+      </a>
+
+      <!-- Sneakers -->
+      <a href="sneakers.html" class="product-link" data-aos="fade-up" data-aos-delay="300" >
+        <div class="product-card bg-gradient-to-br from-green-500 to-teal-600 rounded-xl p-6 cursor-pointer">
+          <img src="sneaker1.webp" alt="StrideX Sneakers" class="rounded-md mb-4 shadow-lg" />
+          <h4 class="text-2xl font-semibold mb-2">Sneakers</h4>
+          <p class="mb-4">Trendy sneakers designed for everyday comfort and style.</p>
+          <div class="flex space-x-4">
+            <a href="https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YOUR_SANDBOX_BUTTON_ID" target="_blank" rel="noopener" class="buy-now-button bg-yellow-400 text-indigo-900 font-bold py-2 px-5 rounded hover:bg-yellow-500" onclick="event.stopPropagation()">Buy Now - PayPal</a>
+            <a href="gcash.html" target="_blank" rel="noopener" class="buy-now-button bg-green-500 text-white font-bold py-2 px-5 rounded hover:bg-green-600" onclick="event.stopPropagation()">Buy Now - GCash</a>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="max-w-lg mx-auto p-6 bg-indigo-800 bg-opacity-70 rounded-xl mb-20" data-aos="fade-up">
+    <h3 class="text-3xl font-bold mb-6 text-center">Contact Us</h3>
+    <form onsubmit="return false;">
+      <div class="mb-4">
+        <label class="block mb-2 font-semibold" for="name">Name</label>
+        <input type="text" id="name" required placeholder="Your Name" class="w-full p-3 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+      </div>
+      <div class="mb-4">
+        <label class="block mb-2 font-semibold" for="email">Email</label>
+        <input type="email" id="email" required placeholder="Your Email" class="w-full p-3 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+      </div>
+      <div class="mb-6">
+        <label class="block mb-2 font-semibold" for="message">Message</label>
+        <textarea id="message" rows="4" required placeholder="Your Message" class="w-full p-3 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="bg-yellow-400 text-indigo-900 font-bold py-3 px-10 rounded hover:bg-yellow-500 transition">Send Message</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-indigo-900 text-yellow-400 py-6 text-center font-semibold">
+    &copy; 2025 StrideX. All rights reserved.
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+
+    // Smooth scrolling for internal anchors
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(anchor.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>

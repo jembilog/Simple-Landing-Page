@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - StrideX</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-indigo-900 text-yellow-400 px-6 py-4 flex justify-between items-center">
+    <a href="index.html" class="text-2xl font-bold">StrideX</a>
+    <ul class="flex space-x-6">
+      <li><a href="index.html" class="hover:underline">Home</a></li>
+      <li><a href="sports-shoes.html" class="hover:underline">Sports Shoes</a></li>
+      <li><a href="slippers.html" class="hover:underline">Slippers</a></li>
+      <li><a href="sneakers.html" class="hover:underline">Sneakers</a></li>
+      <li><a href="about.html" class="hover:underline">About</a></li>
+      <li><a href="gcash.html" class="hover:underline">GCash</a></li>
+      <li><a href="contact.html" class="underline font-semibold">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Form -->
+  <section class="py-20 px-6 max-w-4xl mx-auto">
+    <h1 class="text-4xl font-extrabold text-indigo-900 mb-8 text-center">Contact Us</h1>
+    <form class="bg-white shadow-md rounded-lg p-8 space-y-6">
+      <div>
+        <label for="name" class="block text-lg font-semibold text-gray-700">Name</label>
+        <input type="text" id="name" class="mt-1 block w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required />
+      </div>
+      <div>
+        <label for="email" class="block text-lg font-semibold text-gray-700">Email</label>
+        <input type="email" id="email" class="mt-1 block w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required />
+      </div>
+      <div>
+        <label for="message" class="block text-lg font-semibold text-gray-700">Message</label>
+        <textarea id="message" rows="5" class="mt-1 block w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required></textarea>
+      </div>
+      <button type="submit" class="bg-indigo-900 text-yellow-400 px-6 py-2 rounded-lg font-semibold hover:bg-indigo-800 transition">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-indigo-900 text-yellow-400 py-6 text-center font-semibold">
+    &copy; 2025 StrideX. All rights reserved.
+  </footer>
+
+</body>
+</html>
